@@ -1,5 +1,11 @@
+import ThemeToggler from "./ThemeToggler";
+
 function Header() {
-  return <header>Header</header>;
+  return (
+    <header>
+      <ThemeToggler />
+    </header>
+  );
 }
 
 export default Header;
