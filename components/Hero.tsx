@@ -44,7 +44,13 @@ function Hero() {
             />
           </div>
           {/* Image */}
-          <div className="hidden xl:flex relative">image</div>
+          <div className="hidden xl:flex relative">
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 right-"></div>
+            <DevImg
+              containerStyles="bg-hero_shape w-[300px] h-[300px] bg-no-repeat relative bg-bottom top-20 right-32"
+              imgSrc="/hero/developer.png"
+            />
+          </div>
         </div>
         {/* Icon */}
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">

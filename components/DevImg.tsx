@@ -1,7 +1,16 @@
-import React from "react";
+import Image from "next/image";
 
-function DevImg() {
-  return <div>DevImg</div>;
+interface DevImgProps {
+  containerStyles: string;
+  imgSrc: string;
+}
+
+function DevImg({ containerStyles, imgSrc }: DevImgProps) {
+  return (
+    <div className={`${containerStyles}`}>
+      <Image src={imgSrc} fill priority alt="" />
+    </div>
+  );
 }
 
 export default DevImg;
