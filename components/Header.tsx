@@ -10,8 +10,12 @@ function Header() {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div>
-            <Nav />
+          <div className="flex">
+            <Nav
+              containerStyles="hidden xl:flex gap-x-8 items-center mr-6"
+              linkStyles="relative hover:text-primary transition-all"
+              underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
+            />
             <ThemeToggler />
             <div className="xl:hidden">
               <MobileNav />
