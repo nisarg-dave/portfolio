@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-2">
           <Logo />
           <div className="flex">
             <Nav
