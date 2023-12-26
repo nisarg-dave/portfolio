@@ -120,14 +120,49 @@ function About() {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="w-full grid xl:grid-cols-3 xl:nax-w-[520px] xl:border dark:border-none">
-                <TabsTrigger value="personal">Personal Info</TabsTrigger>
-                <TabsTrigger value="qualifications">Qualifications</TabsTrigger>
-                <TabsTrigger value="skills">Skills</TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+                  Personal Info
+                </TabsTrigger>
+                <TabsTrigger
+                  className="w-[162px] xl:w-auto"
+                  value="qualifications"
+                >
+                  Qualifications
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                  Skills
+                </TabsTrigger>
               </TabsList>
               {/* tabs content */}
-              <div>
+              <div className="text-lg mt-12 xl:mt-8">
                 {/* personal */}
-                <TabsContent value="personal">Personal Info</TabsContent>
+                <TabsContent value="personal">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-4">Software Developer</h3>
+                    <p className="subtitle max-w-l mx-auto xl:mx-0">
+                      I'm a passionate developer on a constant learning journey.
+                      I believe curiosity is the fuel for innovation, so I
+                      actively seek out new technologies and challenges to
+                      expand my skillset.I get genuinely excited about tackling
+                      complex problems, crafting elegant solutions, and seeing
+                      my code come to life
+                    </p>
+                    {/* icons */}
+                    <div className="grid xl:grid-cols-1 gap-4 mb-12">
+                      {infoData.map((item, index) => {
+                        return (
+                          <div
+                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                            key={index}
+                          >
+                            <div className="text-primary">{item.icon}</div>
+                            <div>{item.text}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </TabsContent>
                 <TabsContent value="qualifications">
                   Qualifications Info
                 </TabsContent>
