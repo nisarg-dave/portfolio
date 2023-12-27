@@ -10,11 +10,11 @@ interface SocialsProps {
 
 const icons = [
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/nisarg-dave-6274191a0/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/nisarg-dave",
     name: <RiGithubFill />,
   },
 ];
