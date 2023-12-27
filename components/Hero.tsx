@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -16,17 +15,11 @@ function Hero() {
               Software Developer
             </div>
             <h1 className="h1">Hello, my name is Nisarg Dave</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0 mt-3">
+              I'm a curious coder, always iterating on myself.
             </p>
             {/* Buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
-                <Button className="gap-x-2">
-                  Contact <Send size={18} />
-                </Button>
-              </Link>
               <Button variant="secondary" className="gap-x-2">
                 Download CV <Download size={18} />
               </Button>
