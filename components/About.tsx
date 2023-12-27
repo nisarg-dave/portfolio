@@ -1,5 +1,7 @@
+"use client";
 import DevImg from "./DevImg";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { User2, MailIcon, GraduationCap, Briefcase } from "lucide-react";
 
@@ -49,19 +51,19 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: "skills",
+    title: "Skills",
     data: [
       {
-        name: "HTML, CSS",
+        name: "HTML, CSS, JavaScript",
       },
       {
-        name: "Front-end Development",
+        name: "React, Vue, Next.js",
       },
       {
-        name: "Javascript, PHP",
+        name: "Java, Python, Node.js",
       },
       {
-        name: "Back-end Development",
+        name: "Express, Prisma, GraphQL",
       },
     ],
   },
@@ -88,6 +90,7 @@ const skillData = [
 ];
 
 function About() {
+  const theme = useTheme();
   const getData = (
     arr: {
       title: string;
@@ -240,9 +243,66 @@ function About() {
                     </div>
                   </div>
                 </TabsContent>
+                {/* skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3></h3>
+                    <h3 className="h3 mb-8"> My Favourite Tools</h3>
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/* skills list */}
+                      <div>
+                        {getData(skillData, "Skills")?.data.map(
+                          (item, index) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                key={index}
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                              >
+                                <div className="font-medium">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* tools */}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                        Tools
+                      </h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/* tools list */}
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "tools")?.data.map(
+                          (item, index) => {
+                            const { imgPath } = item;
+                            let selectedImgPath: string;
+                            if (imgPath === "/about/github.png") {
+                              selectedImgPath =
+                                theme.theme === "dark"
+                                  ? "/about/github-dark.svg"
+                                  : imgPath;
+                            } else {
+                              selectedImgPath = imgPath!;
+                            }
+                            console.debug(selectedImgPath);
+                            return (
+                              <div key={index}>
+                                <Image
+                                  src={selectedImgPath}
+                                  width={48}
+                                  height={48}
+                                  alt=""
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </TabsContent>
               </div>
