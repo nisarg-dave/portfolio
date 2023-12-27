@@ -20,7 +20,7 @@ const infoData = [
 
 const qualificationData = [
   {
-    title: "education",
+    title: "Education",
     data: [
       {
         university: "University of Western Australia",
@@ -31,16 +31,16 @@ const qualificationData = [
     ],
   },
   {
-    title: "experience",
+    title: "Experience",
     data: [
       {
         company: "Coders for Causes",
-        title: "Volunteer",
+        role: "Volunteer",
         years: "2021 - 2022",
       },
       {
         company: "Vizcom Technologies",
-        title: "Software Developer",
+        role: "Software Developer",
         years: "2022 - Present",
       },
     ],
@@ -69,16 +69,19 @@ const skillData = [
     title: "tools",
     data: [
       {
-        imgPath: "/about/vscode.svg",
+        imgPath: "/about/vscode.png",
       },
       {
-        imgPath: "/about/figma.svg",
+        imgPath: "/about/github.png",
       },
       {
-        imgPath: "/about/notion.svg",
+        imgPath: "/about/git.png",
       },
       {
-        imgPath: "/about/wordpress.svg",
+        imgPath: "/about/intellij.png",
+      },
+      {
+        imgPath: "/about/docker.png",
       },
     ],
   },
@@ -93,7 +96,7 @@ function About() {
         qualifaction?: string;
         years?: string;
         company?: string;
-        title?: string;
+        role?: string;
         name?: string;
         imgPath?: string;
       }[];
@@ -124,10 +127,10 @@ function About() {
                   Personal Info
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-auto xl:w-auto"
                   value="qualifications"
                 >
-                  Qualifications
+                  Qualifications and Experience
                 </TabsTrigger>
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Skills
@@ -164,9 +167,84 @@ function About() {
                   </div>
                 </TabsContent>
                 <TabsContent value="qualifications">
-                  Qualifications Info
+                  <div>
+                    <h3 className="h3 mb-8 text-center xl:text-left">
+                      My Awesome Journey
+                    </h3>
+                    {/* experience and education wrapper */}
+                    <div>
+                      {/* experience */}
+                      <div>
+                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                          <Briefcase />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "Experience")?.title}
+                          </h4>
+                        </div>
+                        {/* list */}
+                        <div className="flex flex-col gap-y-8 mt-2">
+                          {getData(qualificationData, "Experience")
+                            ?.data.toReversed()
+                            .map((item, index) => {
+                              const { company, role, years } = item;
+                              return (
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="ml-10">
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {company}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-2">
+                                      {role}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                        </div>
+                      </div>
+                      {/* education */}
+                      <div>
+                        <div className="flex gap-x-4 items-center text-[22px] text-primary mt-4">
+                          <GraduationCap />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "Education")?.title}
+                          </h4>
+                        </div>
+                        {/* list */}
+                        <div className="flex flex-col gap-y-8 mt-2">
+                          {getData(qualificationData, "Education")
+                            ?.data.toReversed()
+                            .map((item, index) => {
+                              const { university, qualifaction, years } = item;
+                              return (
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="ml-10">
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {university}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-2">
+                                      {qualifaction}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </TabsContent>
-                <TabsContent value="skills">Skills Info</TabsContent>
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3></h3>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
           </div>
