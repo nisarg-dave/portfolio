@@ -12,7 +12,7 @@ function Footer() {
           />
           {/* copyright */}
           <div className="text-muted-foreground">
-            Copyright &copy; Nisarg Dave. All rights reserved.
+            Built using Next.js, Tailwind CSS and shadcn-ui.
           </div>
         </div>
       </div>
