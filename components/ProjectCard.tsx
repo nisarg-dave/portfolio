@@ -21,10 +21,10 @@ function ProjectCard({ project }: ProjectCardProps) {
         {/* image */}
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 overflow-hidden">
           <Image
-            className="absolute bottom-0 shadow-2xl"
+            className="absolute shadow-2xl"
             src={project.image}
-            width={247}
-            height={250}
+            width={400}
+            height={100}
             alt=""
             priority
           />
