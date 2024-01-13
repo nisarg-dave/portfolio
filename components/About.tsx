@@ -60,10 +60,10 @@ const skillData = [
         name: "React, Vue, Next.js",
       },
       {
-        name: "Java, Python, Node.js",
+        name: "Java, Python, Typescript",
       },
       {
-        name: "Express, Prisma, GraphQL",
+        name: "Node.js, Prisma, GraphQL",
       },
     ],
   },
