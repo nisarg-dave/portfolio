@@ -16,7 +16,7 @@ function Hero() {
             </div>
             <h1 className="h1">Hello, my name is Nisarg Dave</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0 mt-3">
-              I'm a curious coder, always iterating on myself.
+              I&apos;m a curious coder, always iterating on myself.
             </p>
             {/* Buttons */}
             {/* <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
