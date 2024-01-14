@@ -104,7 +104,7 @@ function About() {
         imgPath?: string;
       }[];
     }[],
-    title: string,
+    title: string
   ) => {
     return arr.find((item) => item.title === title);
   };
@@ -146,9 +146,9 @@ function About() {
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">Software Developer</h3>
                     <p className="subtitle max-w-l mx-auto xl:mx-0">
-                      I'm a passionate developer on a constant learning journey.
-                      I believe curiosity is the fuel for innovation, so I
-                      actively seek out new technologies and challenges to
+                      I&apos;m a passionate developer on a constant learning
+                      journey. I believe curiosity is the fuel for innovation,
+                      so I actively seek out new technologies and challenges to
                       expand my skillset.I get genuinely excited about tackling
                       complex problems, crafting elegant solutions, and seeing
                       my code come to life
@@ -263,7 +263,7 @@ function About() {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>
@@ -299,7 +299,7 @@ function About() {
                                 />
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>
