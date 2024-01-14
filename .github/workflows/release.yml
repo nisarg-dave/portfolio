@@ -27,6 +27,6 @@ jobs:
           tag_name: v1.0.1
           release_name: v1.0.1
           body: |
-            Created my portfolio site.
+            Fix: Fixed linting and formatting issues and removed unnecessary page.
           draft: false
           prerelease: false
