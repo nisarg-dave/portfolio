@@ -24,9 +24,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PAT_TOKEN }} # Created my own PAT
         with:
-          tag_name: v1.0.1
-          release_name: v1.0.1
+          tag_name: v1.1.0
+          release_name: v1.1.0
           body: |
-            Fix: Fixed linting and formatting issues and removed unnecessary page.
+            Feat: Added The Mandalorian API to the projects list.
           draft: false
           prerelease: false
