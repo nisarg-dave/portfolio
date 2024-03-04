@@ -29,7 +29,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             priority
           />
           {/* btn links */}
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-4 cursor-pointer">
             {/* project link */}
             <Link
               href={project.link}
