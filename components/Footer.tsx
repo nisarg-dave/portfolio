@@ -12,7 +12,8 @@ function Footer() {
           />
           {/* copyright */}
           <div className="text-muted-foreground">
-            Built using Next.js, Tailwind CSS and shadcn-ui.
+            Built using Next.js, Tailwind CSS and shadcn-ui. Followed tutorial
+            by Cristian Mihai.
           </div>
         </div>
       </div>
