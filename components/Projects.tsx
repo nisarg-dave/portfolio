@@ -2,6 +2,14 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
+    name: "The Mandalorian API",
+    description:
+      "A REST API that provides quotes from The Mandalorian TV series and its spin-off shows, The Book of Boba Fett, and Ahsoka. It also offers information about characters and planets. Additionally, the API includes protected endpoints for administrators to create, edit, and delete quotes, characters, and planets. The API, the Postgres database and Nginx reverse proxy are running in Docker containers on a Digital Ocean droplet. Built using Kotlin and Ktor.",
+    image: "/projects/the-mandalorian-api.jpeg",
+    link: "https://the-mandalorian.dev/swagger",
+    github: "https://github.com/nisarg-dave/the-mandalorian-api",
+  },
+  {
     name: "Football Central",
     description:
       "A website that displays fixtures, standings and results of the top 6 Football leagues in Europe. Furthermore, it displays tweets about the latest transfers and it also includes a blog written by my friend about FC Barcelona. Built using Next.js, Typescript, Sanity CMS, Zustand state management library and Tailwind CSS.",
