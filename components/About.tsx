@@ -149,9 +149,9 @@ function About() {
                       I&apos;m a passionate developer on a constant learning
                       journey. I believe curiosity is the fuel for innovation,
                       so I actively seek out new technologies and challenges to
-                      expand my skillset.I get genuinely excited about tackling
+                      expand my skillset. I get genuinely excited about tackling
                       complex problems, crafting elegant solutions, and seeing
-                      my code come to life
+                      my code come to life.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-1 gap-4 mb-12">
