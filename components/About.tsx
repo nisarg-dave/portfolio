@@ -104,7 +104,7 @@ function About() {
         imgPath?: string;
       }[];
     }[],
-    title: string
+    title: string,
   ) => {
     return arr.find((item) => item.title === title);
   };
@@ -263,7 +263,7 @@ function About() {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>
@@ -299,7 +299,7 @@ function About() {
                                 />
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>
