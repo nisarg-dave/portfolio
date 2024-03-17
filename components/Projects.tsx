@@ -100,6 +100,13 @@ const projectData = [
     github: "https://github.com/nisarg-dave/netflix-react-app",
   },
   {
+    name: "Visualising Crime Date for the WA Police Force",
+    description:
+      "An interactive GUI developed in a team of six for my final semester university project for the Data Science and Analytics Division of the WA Police Force. This GUI is used to visualise crime data trends on interactive heatmaps of Western Australia and time series graphs. Built using Python, PyQt, Pandas, Matplotlib, Plotly, and Numpy. The repository is private as requested by the WA Police Force.",
+    image: "/projects/WAPOL.png",
+    github: "https://github.com/nisarg-dave/CITS3200_17-visualising-crime-data",
+  },
+  {
     name: "The Vault",
     description:
       "A web-based data entry application for the West Australian Institute of Sport's (WAIS) pole vault coaches. This was a project that I was a part of in a multimember team during the Coders for Causes winter and summer project periods in 2021. Built using Vue.js, Django and Docker.",
