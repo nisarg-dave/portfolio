@@ -24,9 +24,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PAT_TOKEN }} # Created my own PAT
         with:
-          tag_name: v1.1.0
-          release_name: v1.1.0
+          tag_name: v1.2.0
+          release_name: v1.2.0
           body: |
-            Feat: Added The Mandalorian API to the projects list.
+            Feat: Added WAPOL project to the projects list and added download button for my resume.
           draft: false
           prerelease: false

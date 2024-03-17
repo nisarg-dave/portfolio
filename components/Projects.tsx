@@ -46,7 +46,6 @@ const projectData = [
     description:
       "A serverless function, running on AWS Lambda, to remind my friends to make changes to their Fantasy Premier League teams before each matchweek's deadline. Built using Node.js, Puppeteer and the Serverless Framework.",
     image: "/projects/lamdba-function.png",
-    link: "https://github.com/nisarg-dave/fantasy-premier-league-reminder-serverless",
     github:
       "https://github.com/nisarg-dave/fantasy-premier-league-reminder-serverless",
   },
@@ -55,21 +54,18 @@ const projectData = [
     description:
       "A Chess game built using Java and the JFrame and JPanel libraries.",
     image: "/projects/java-chess-game.png",
-    link: "https://github.com/nisarg-dave/java-chess-game",
     github: "https://github.com/nisarg-dave/java-chess-game",
   },
   {
     name: "Kotlin Tic Tac Toe",
     description: "A terminal based Tic Tac Toe game written in Kotlin.",
     image: "/projects/kotlin-tic-tac-toe.png",
-    link: "https://github.com/nisarg-dave/kotlin-tic-tac-toe",
     github: "https://github.com/nisarg-dave/kotlin-tic-tac-toe",
   },
   {
     name: "Parking Ticket Machine",
     description: "A terminal based parking ticket machine written in Java.",
     image: "/projects/parking-ticket-machine.png",
-    link: "https://github.com/nisarg-dave/parking-ticket-machine",
     github: "https://github.com/nisarg-dave/parking-ticket-machine",
   },
   {
@@ -102,6 +98,13 @@ const projectData = [
     image: "/projects/netflix-clone.png",
     link: "https://netflix-react-clone-45c78.web.app/",
     github: "https://github.com/nisarg-dave/netflix-react-app",
+  },
+  {
+    name: "Visualising Crime Date for the WA Police Force",
+    description:
+      "An interactive GUI developed in a team of six for my final semester university project for the Data Science and Analytics Division of the WA Police Force. This GUI is used to visualise crime data trends on interactive heatmaps of Western Australia and time series graphs. Built using Python, PyQt, Pandas, Matplotlib, Plotly, and Numpy. The repository is private as requested by the WA Police Force.",
+    image: "/projects/WAPOL.png",
+    github: "https://github.com/nisarg-dave/CITS3200_17-visualising-crime-data",
   },
   {
     name: "The Vault",
