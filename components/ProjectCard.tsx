@@ -9,7 +9,7 @@ interface ProjectCardProps {
     name: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
     github: string;
   };
 }
@@ -31,12 +31,16 @@ function ProjectCard({ project }: ProjectCardProps) {
           {/* btn links */}
           <div className="flex gap-x-4 cursor-pointer">
             {/* project link */}
-            <Link
-              href={project.link}
-              className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-            >
-              <Link2Icon className="text-white" />
-            </Link>
+            {project.link ? (
+              <Link
+                href={project.link}
+                className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+              >
+                <Link2Icon className="text-white" />
+              </Link>
+            ) : (
+              <></>
+            )}
             {/* github link */}
             <Link
               href={project.github}
