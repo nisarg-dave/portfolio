@@ -19,11 +19,13 @@ function Hero() {
               I&apos;m a curious coder, always iterating on myself.
             </p>
             {/* Buttons */}
-            {/* <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
-            </div> */}
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
+              <a href="/resume/Nisarg Dave Resume.pdf">
+                <Button variant="secondary" className="gap-x-2">
+                  Download Resume <Download size={18} />
+                </Button>
+              </a>
+            </div>
             {/* Socials */}
             <Socials
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"
