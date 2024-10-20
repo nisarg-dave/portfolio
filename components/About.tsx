@@ -43,7 +43,12 @@ const qualificationData = [
       {
         company: "Vizcom Technologies",
         role: "Software Developer",
-        years: "2022 - Present",
+        years: "2022 - 2024",
+      },
+      {
+        company: "Education Horizons",
+        role: "Associate Software Engineer",
+        years: "2024 - Present",
       },
     ],
   },
