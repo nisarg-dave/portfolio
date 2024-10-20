@@ -43,7 +43,12 @@ const qualificationData = [
       {
         company: "Vizcom Technologies",
         role: "Software Developer",
-        years: "2022 - Present",
+        years: "2022 - 2024",
+      },
+      {
+        company: "Education Horizons",
+        role: "Associate Software Engineer",
+        years: "2024 - Present",
       },
     ],
   },
@@ -104,7 +109,7 @@ function About() {
         imgPath?: string;
       }[];
     }[],
-    title: string,
+    title: string
   ) => {
     return arr.find((item) => item.title === title);
   };
@@ -263,7 +268,7 @@ function About() {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>
@@ -299,7 +304,7 @@ function About() {
                                 />
                               </div>
                             );
-                          },
+                          }
                         )}
                       </div>
                     </div>
