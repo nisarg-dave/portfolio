@@ -46,7 +46,7 @@ const qualificationData = [
         years: "2022 - 2024",
       },
       {
-        company: "Education Horizons",
+        company: "Tes",
         role: "Associate Software Engineer",
         years: "2024 - Present",
       },
@@ -62,10 +62,10 @@ const skillData = [
         name: "HTML, CSS, JavaScript",
       },
       {
-        name: "React, Vue, Next.js",
+        name: "React, Vue, Next.js, NestJS",
       },
       {
-        name: "Java, Python",
+        name: "Java, Python, C#",
       },
       {
         name: "Typescript, Node.js",
