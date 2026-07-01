@@ -38,17 +38,22 @@ const qualificationData = [
       {
         company: "Coders for Causes",
         role: "Volunteer",
-        years: "2021 - 2022",
+        years: "Jun 2021 - Feb 2022",
       },
       {
         company: "Vizcom Technologies",
         role: "Software Developer",
-        years: "2022 - 2024",
+        years: "Mar 2022 - Sep 2024",
       },
       {
-        company: "Education Horizons",
+        company: "Tes",
         role: "Associate Software Engineer",
-        years: "2024 - Present",
+        years: "Sep 2024 - Jun 2026",
+      },
+      {
+        company: "Tes",
+        role: "Software Engineer",
+        years: "Jun 2026 - Present",
       },
     ],
   },
@@ -62,10 +67,10 @@ const skillData = [
         name: "HTML, CSS, JavaScript",
       },
       {
-        name: "React, Vue, Next.js",
+        name: "React, Vue, Next.js, NestJS",
       },
       {
-        name: "Java, Python",
+        name: "Java, Python, C#",
       },
       {
         name: "Typescript, Node.js",
